@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#fae6cb">
+  <meta name="description" content="Conheça os serviços de pegue e monte, decoração, bolos, doces e cupcakes da Maná Festas e Confeitaria.">
+  <title>Maná Festas e Confeitaria | Seu momento especial</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="topbar">Detalhes especiais para comemorar do seu jeito <span>♡</span></div>
+  <header class="header">
+    <a class="brand" href="#inicio" aria-label="Maná Festas - início"><span class="brand-icon">🧁</span><span class="brand-name">Maná</span><span class="brand-subtitle">FESTAS & CONFEITARIA</span></a>
+    <button class="menu-toggle" id="menu-toggle" aria-label="Abrir menu" aria-expanded="false">☰</button>
+    <nav class="nav" id="main-nav" aria-label="Menu principal">
+      <a href="#inicio">Início</a><a href="#catalogo">Catálogo</a><a href="#como-funciona">Como funciona</a><a href="#contato">Orçamento</a>
+    </nav>
+    <div class="header-buttons">
+      <a class="button button-small ifood-cta" href="https://www.ifood.com.br/delivery/contagem-mg/mana-festas--confeitaria-novo-eldorado/f53a2dbe-c68d-478c-b0da-5de8bbf55d9f?UTM_Medium=share" target="_blank" rel="noopener noreferrer">iFood 🍔</a>
+      <a class="button button-small header-cta" href="https://wa.me/553189580961" target="_blank" rel="noopener noreferrer">WhatsApp ↗</a>
+    </div>
+  </header>
+  <main>
+    <section class="hero" id="inicio">
+      <div class="hero-copy"><p class="eyebrow"><span class="eyebrow-line"></span> MANÁ FESTAS E CONFEITARIA</p>
+        <h1>Uma festa linda começa nos <em>detalhes e sabores.</em></h1>
+        <p class="hero-description">Trabalhamos com pegue e monte, decoração, bolos, doces e cupcakes. Explore nossas opções e faça seu pedido pelo iFood ou diretamente conosco.</p>
+        <div class="hero-buttons">
+            <a class="button button-primary" href="#catalogo">Explorar catálogo <span>→</span></a>
+            <a class="button button-outline" href="https://www.ifood.com.br/delivery/contagem-mg/mana-festas--confeitaria-novo-eldorado/f53a2dbe-c68d-478c-b0da-5de8bbf55d9f?UTM_Medium=share" target="_blank" rel="noopener noreferrer">Pedir no iFood 🍔</a>
+            <a class="text-link" href="https://www.instagram.com/manafestaseconfeitaria?rpxt=MW96cTdmcDU1bG00ag==" target="_blank" rel="noopener noreferrer">Ver Instagram ↗</a>
+        </div>
+        <div class="hero-note">♡ Escolha seu tema e doces, consulte as opções e combine a entrega ou retirada.</div>
+      </div>
+      <div class="hero-photo"><img src="images/logo/logosite.jpg" alt="Logo Maná Festas e Confeitaria"><div class="photo-tag"><span>✧</span><div><strong>Seu tema, seu momento</strong><small>Consulte modelos e sabores</small></div></div></div>
+      <div class="hero-blob blob-one"></div><div class="hero-blob blob-two"></div>
+    </section>
+
+    <section class="catalog section" id="catalogo">
+      <div class="section-heading"><p class="eyebrow">ENCONTRE O QUE PRECISA</p><h2>Explore nosso catálogo</h2><p>Os itens estão separados por categoria para facilitar sua escolha. Consulte-nos para confirmar disponibilidade e valores.</p></div>
+      <div class="category-nav" role="group" aria-label="Filtrar categorias">
+        <button class="category-chip active" data-filter="todos">Tudo</button>
+        <button class="category-chip" data-filter="pegue-monte">Pegue e monte</button>
+        <button class="category-chip" data-filter="decoracao">Decoração</button>
+        <button class="category-chip" data-filter="bolos">Bolos</button>
+        <button class="category-chip" data-filter="doces">Doces</button>
+        <button class="category-chip" data-filter="cupcakes">Cupcakes</button>
+      </div>
+      <div class="product-grid">
+        <article class="product-card" data-category="bolos"><div class="product-image"><img src="images/bolos/bolo-exemplo.jpg" alt="Bolo de chocolate com morangos" loading="lazy"><span class="category-label">Bolos</span></div><div class="product-body"><h3>Bolo de Chocolate</h3><p>Delicioso bolo com cobertura e morangos frescos.</p><div class="product-bottom"><strong class="price">Sob consulta</strong><a class="text-link interest-link" data-item="Bolo de Chocolate" href="#contato">Consultar ↗</a></div></div></article>
+        <article class="product-card" data-category="pegue-monte"><div class="product-image"><img src="images/pegue-monte/pegue-monte-exemplo.jpg" alt="Kit Pegue e Monte BABY" loading="lazy"><span class="category-label">Pegue e monte</span></div><div class="product-body"><h3>Móveis BABY</h3><p>Ideal para chás de bebê e mesversários.</p><div class="product-bottom"><strong class="price">Sob consulta</strong><a class="text-link interest-link" data-item="Kit Pegue e Monte BABY" href="#contato">Consultar ↗</a></div></div></article>
+        <article class="product-card" data-category="decoracao"><div class="product-image"><img src="images/decoracao/decoracao-exemplo.jpg" alt="Decoração A Bela e a Fera" loading="lazy"><span class="category-label">Decoração</span></div><div class="product-body"><h3>Decoração Temática</h3><p>Diversos temas infantis e adultos para sua festa.</p><div class="product-bottom"><strong class="price">Sob consulta</strong><a class="text-link interest-link" data-item="Decoração Temática" href="#contato">Consultar ↗</a></div></div></article>
+      </div>
+      <p class="fine-print">As imagens são ilustrativas. Entre em contato para ver todas as opções do nosso portfólio completo. Você pode substituir as imagens na pasta 'images'.</p>
+    </section>
+
+    <section class="how-section section" id="como-funciona"><div class="section-heading"><p class="eyebrow">É SIMPLES</p><h2>Como funciona?</h2><p>O processo de encomenda, resumido em três passos rápidos.</p></div>
+      <div class="steps"><article class="step"><span>01</span><div><h3>Escolha o pedido</h3><p>Veja as opções no catálogo, no Instagram ou converse com a loja para definir bolos, doces e o estilo da decoração.</p></div></article><article class="step"><span>02</span><div><h3>Peça um orçamento</h3><p>Envie uma mensagem para receber os detalhes e valores, ou faça pedidos rápidos diretamente pelo nosso iFood.</p></div></article><article class="step"><span>03</span><div><h3>Combine a entrega</h3><p>Agendamos a retirada ou entrega dos kits e doces na data do seu evento com toda segurança.</p></div></article></div>
+      <div class="payment-note"><div><span class="payment-icon">♡</span><div><strong>Formas de pagamento</strong><p>Dinheiro, PIX, transferência bancária e cartão de crédito. Confirme as condições no momento do pedido.</p></div></div></div>
+    </section>
+
+    <section class="contact section" id="contato"><div class="contact-copy"><p class="eyebrow">VAMOS CONVERSAR?</p><h2>Conte pra gente o que você está planejando.</h2><p>Preencha os dados e o site vai preparar uma mensagem para você conferir e enviar pelo WhatsApp.</p><div class="contact-item"><span>☏</span><div><small>WhatsApp</small><strong>(31) 8958-0961</strong></div></div><div class="contact-item"><span>◎</span><div><small>Instagram</small><strong>@_manafestaseconfeitaria</strong></div></div><a class="button button-outline" href="https://www.instagram.com/manafestaseconfeitaria?rpxt=MW96cTdmcDU1bG00ag==" target="_blank" rel="noopener noreferrer">Acompanhar no Instagram ↗</a></div>
+      <div class="form-card"><form id="quote-form"><label for="name">Seu nome *</label><input id="name" name="name" required placeholder="Como podemos te chamar?"><label for="category">Qual categoria te interessa? *</label><select id="category" name="category" required><option value="">Selecione uma categoria</option><option>Pegue e monte</option><option>Decoração</option><option>Bolos</option><option>Doces</option><option>Cupcakes</option><option>Quero consultar outras opções</option></select><label for="item">Qual item ou tema? (opcional)</label><input id="item" name="item" placeholder="Ex.: bolo de chocolate, tema infantil..."><label for="date">Data do evento (opcional)</label><input id="date" name="date" type="date"><label for="details">Detalhes (opcional)</label><textarea id="details" name="details" rows="3" placeholder="Conte um pouco sobre sua ideia"></textarea><button class="button button-primary submit" type="submit">Preparar mensagem no WhatsApp ↗</button><p class="form-note">O WhatsApp abrirá com a mensagem pronta. Você ainda poderá revisar antes de enviar.</p><p id="form-error" class="form-error" role="alert"></p></form></div>
+    </section>
+  </main>
+  <footer class="footer"><a class="brand footer-brand" href="#inicio"><span class="brand-icon">🧁</span><span class="brand-name">Maná</span><span class="brand-subtitle">FESTAS & CONFEITARIA</span></a><p>Para celebrar momentos que ficam na memória com muito sabor.</p><div class="footer-links"><a href="https://wa.me/553189580961" target="_blank" rel="noopener noreferrer">WhatsApp</a><a href="https://www.instagram.com/manafestaseconfeitaria?rpxt=MW96cTdmcDU1bG00ag==" target="_blank" rel="noopener noreferrer">Instagram</a><a href="https://www.ifood.com.br/delivery/contagem-mg/mana-festas--confeitaria-novo-eldorado/f53a2dbe-c68d-478c-b0da-5de8bbf55d9f?UTM_Medium=share" target="_blank" rel="noopener noreferrer">iFood</a><a href="#inicio">Voltar ao topo ↑</a></div><small>© <span id="year"></span> Maná Festas e Confeitaria.</small></footer>
+  <a class="whatsapp-float" href="https://wa.me/553189580961" target="_blank" rel="noopener noreferrer" aria-label="Conversar com a Maná pelo WhatsApp">☏</a>
+  <script src="script.js"></script>
+</body></html>
