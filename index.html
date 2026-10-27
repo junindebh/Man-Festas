@@ -38,7 +38,7 @@
       <div class="hero-blob blob-one"></div><div class="hero-blob blob-two"></div>
     </section>
 
-  <section class="catalog section" id="catalogo">
+ <section class="catalog section" id="catalogo">
       <div class="section-heading"><p class="eyebrow">ENCONTRE O QUE PRECISA</p><h2>Explore nosso catálogo</h2><p>Os itens estão separados por categoria para facilitar sua escolha. Consulte-nos para confirmar disponibilidade e valores.</p></div>
       
       <!-- Categorias Principais -->
@@ -50,7 +50,14 @@
         <button class="category-chip" data-filter="doces">Doces</button>
       </div>
       
-      <!-- Subcategorias para Bolos (Escondidas por padrão) -->
+      <!-- Subcategorias para Pegue e Monte (NOVO) -->
+      <div class="subcategory-nav" id="sub-pegue-monte" style="display: none;" role="group" aria-label="Subcategorias de Pegue e Monte">
+        <button class="sub-chip active" data-sub="todos">Todos</button>
+        <button class="sub-chip" data-sub="tradicionais">Tradicionais</button>
+        <button class="sub-chip" data-sub="mesa">De Mesa</button>
+      </div>
+
+      <!-- Subcategorias para Bolos -->
       <div class="subcategory-nav" id="sub-bolos" style="display: none;" role="group" aria-label="Subcategorias de Bolos">
         <button class="sub-chip active" data-sub="todos">Todos os Bolos</button>
         <button class="sub-chip" data-sub="festa">Bolos de Festa</button>
@@ -58,7 +65,7 @@
         <button class="sub-chip" data-sub="fatias">Fatias (Combos)</button>
       </div>
 
-      <!-- Subcategorias para Doces (Escondidas por padrão) -->
+      <!-- Subcategorias para Doces -->
       <div class="subcategory-nav" id="sub-doces" style="display: none;" role="group" aria-label="Subcategorias de Doces">
         <button class="sub-chip active" data-sub="todos">Todos os Doces</button>
         <button class="sub-chip" data-sub="gourmet">Doces Gourmet</button>
@@ -68,9 +75,14 @@
       <div class="product-grid">
         
         <!-- Produtos Pegue e Monte -->
-        <article class="product-card" data-category="pegue-monte" data-subcategory="todos">
-            <div class="product-image"><img src="images/pegue-monte/pegue-monte-exemplo.jpg" alt="Kit Pegue e Monte BABY" loading="lazy"><span class="category-label">Pegue e monte</span></div>
-            <div class="product-body"><h3>Móveis BABY</h3><p>Ideal para chás de bebê e mesversários.</p><div class="product-bottom"><strong class="price">Sob consulta</strong><a class="text-link interest-link" data-item="Kit Pegue e Monte BABY" href="#contato">Consultar ↗</a></div></div>
+        <article class="product-card" data-category="pegue-monte" data-subcategory="tradicionais">
+            <div class="product-image"><img src="images/pegue-monte/tradicional-exemplo.jpg" alt="Kit Pegue e Monte Tradicional" loading="lazy"><span class="category-label">Pegue e monte</span></div>
+            <div class="product-body"><h3>Kit Tradicional</h3><p>Estruturas completas para montar a sua festa em casa.</p><div class="product-bottom"><strong class="price">Sob consulta</strong><a class="text-link interest-link" data-item="Kit Pegue e Monte Tradicional" href="#contato">Consultar ↗</a></div></div>
+        </article>
+
+        <article class="product-card" data-category="pegue-monte" data-subcategory="mesa">
+            <div class="product-image"><img src="images/pegue-monte/mesa-exemplo.jpg" alt="Kit Pegue e Monte de Mesa" loading="lazy"><span class="category-label">Pegue e monte</span></div>
+            <div class="product-body"><h3>Kit de Mesa</h3><p>Ideal para decorações mais intimistas, mesversários e bolos.</p><div class="product-bottom"><strong class="price">Sob consulta</strong><a class="text-link interest-link" data-item="Kit Pegue e Monte de Mesa" href="#contato">Consultar ↗</a></div></div>
         </article>
 
         <!-- Produtos Decoração -->
@@ -108,11 +120,6 @@
 
       </div>
       <p class="fine-print">As imagens são ilustrativas. Entre em contato para ver todas as opções do nosso portfólio completo.</p>
-    </section>
-
-    <section class="how-section section" id="como-funciona"><div class="section-heading"><p class="eyebrow">É SIMPLES</p><h2>Como funciona?</h2><p>O processo de encomenda, resumido em três passos rápidos.</p></div>
-      <div class="steps"><article class="step"><span>01</span><div><h3>Escolha o pedido</h3><p>Veja as opções no catálogo, no Instagram ou converse com a loja para definir bolos, doces e o estilo da decoração.</p></div></article><article class="step"><span>02</span><div><h3>Peça um orçamento</h3><p>Envie uma mensagem para receber os detalhes e valores, ou faça pedidos rápidos diretamente pelo nosso iFood.</p></div></article><article class="step"><span>03</span><div><h3>Combine a entrega</h3><p>Agendamos a retirada ou entrega dos kits e doces na data do seu evento com toda segurança.</p></div></article></div>
-      <div class="payment-note"><div><span class="payment-icon">♡</span><div><strong>Formas de pagamento</strong><p>Dinheiro, PIX, transferência bancária e cartão de crédito. Confirme as condições no momento do pedido.</p></div></div></div>
     </section>
 
     <section class="contact section" id="contato"><div class="contact-copy"><p class="eyebrow">VAMOS CONVERSAR?</p><h2>Conte pra gente o que você está planejando.</h2><p>Preencha os dados e o site vai preparar uma mensagem para você conferir e enviar pelo WhatsApp.</p><div class="contact-item"><span>☏</span><div><small>WhatsApp</small><strong>(31) 8958-0961</strong></div></div><div class="contact-item"><span>◎</span><div><small>Instagram</small><strong>@_manafestaseconfeitaria</strong></div></div><a class="button button-outline" href="https://www.instagram.com/manafestaseconfeitaria?rpxt=MW96cTdmcDU1bG00ag==" target="_blank" rel="noopener noreferrer">Acompanhar no Instagram ↗</a></div>
