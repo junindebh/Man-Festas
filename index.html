@@ -38,22 +38,76 @@
       <div class="hero-blob blob-one"></div><div class="hero-blob blob-two"></div>
     </section>
 
-    <section class="catalog section" id="catalogo">
+  <section class="catalog section" id="catalogo">
       <div class="section-heading"><p class="eyebrow">ENCONTRE O QUE PRECISA</p><h2>Explore nosso catálogo</h2><p>Os itens estão separados por categoria para facilitar sua escolha. Consulte-nos para confirmar disponibilidade e valores.</p></div>
+      
+      <!-- Categorias Principais -->
       <div class="category-nav" role="group" aria-label="Filtrar categorias">
         <button class="category-chip active" data-filter="todos">Tudo</button>
         <button class="category-chip" data-filter="pegue-monte">Pegue e monte</button>
         <button class="category-chip" data-filter="decoracao">Decoração</button>
         <button class="category-chip" data-filter="bolos">Bolos</button>
         <button class="category-chip" data-filter="doces">Doces</button>
-        <button class="category-chip" data-filter="cupcakes">Cupcakes</button>
       </div>
+      
+      <!-- Subcategorias para Bolos (Escondidas por padrão) -->
+      <div class="subcategory-nav" id="sub-bolos" style="display: none;" role="group" aria-label="Subcategorias de Bolos">
+        <button class="sub-chip active" data-sub="todos">Todos os Bolos</button>
+        <button class="sub-chip" data-sub="festa">Bolos de Festa</button>
+        <button class="sub-chip" data-sub="pote">Bolos no Pote</button>
+        <button class="sub-chip" data-sub="fatias">Fatias (Combos)</button>
+      </div>
+
+      <!-- Subcategorias para Doces (Escondidas por padrão) -->
+      <div class="subcategory-nav" id="sub-doces" style="display: none;" role="group" aria-label="Subcategorias de Doces">
+        <button class="sub-chip active" data-sub="todos">Todos os Doces</button>
+        <button class="sub-chip" data-sub="gourmet">Doces Gourmet</button>
+        <button class="sub-chip" data-sub="especiais">Doces Especiais & Cupcakes</button>
+      </div>
+
       <div class="product-grid">
-        <article class="product-card" data-category="bolos"><div class="product-image"><img src="images/bolos/bolo-exemplo.jpg" alt="Bolo de chocolate com morangos" loading="lazy"><span class="category-label">Bolos</span></div><div class="product-body"><h3>Bolo de Chocolate</h3><p>Delicioso bolo com cobertura e morangos frescos.</p><div class="product-bottom"><strong class="price">Sob consulta</strong><a class="text-link interest-link" data-item="Bolo de Chocolate" href="#contato">Consultar ↗</a></div></div></article>
-        <article class="product-card" data-category="pegue-monte"><div class="product-image"><img src="images/pegue-monte/pegue-monte-exemplo.jpg" alt="Kit Pegue e Monte BABY" loading="lazy"><span class="category-label">Pegue e monte</span></div><div class="product-body"><h3>Móveis BABY</h3><p>Ideal para chás de bebê e mesversários.</p><div class="product-bottom"><strong class="price">Sob consulta</strong><a class="text-link interest-link" data-item="Kit Pegue e Monte BABY" href="#contato">Consultar ↗</a></div></div></article>
-        <article class="product-card" data-category="decoracao"><div class="product-image"><img src="images/decoracao/decoracao-exemplo.jpg" alt="Decoração A Bela e a Fera" loading="lazy"><span class="category-label">Decoração</span></div><div class="product-body"><h3>Decoração Temática</h3><p>Diversos temas infantis e adultos para sua festa.</p><div class="product-bottom"><strong class="price">Sob consulta</strong><a class="text-link interest-link" data-item="Decoração Temática" href="#contato">Consultar ↗</a></div></div></article>
+        
+        <!-- Produtos Pegue e Monte -->
+        <article class="product-card" data-category="pegue-monte" data-subcategory="todos">
+            <div class="product-image"><img src="images/pegue-monte/pegue-monte-exemplo.jpg" alt="Kit Pegue e Monte BABY" loading="lazy"><span class="category-label">Pegue e monte</span></div>
+            <div class="product-body"><h3>Móveis BABY</h3><p>Ideal para chás de bebê e mesversários.</p><div class="product-bottom"><strong class="price">Sob consulta</strong><a class="text-link interest-link" data-item="Kit Pegue e Monte BABY" href="#contato">Consultar ↗</a></div></div>
+        </article>
+
+        <!-- Produtos Decoração -->
+        <article class="product-card" data-category="decoracao" data-subcategory="todos">
+            <div class="product-image"><img src="images/decoracao/decoracao-exemplo.jpg" alt="Decoração Temática" loading="lazy"><span class="category-label">Decoração</span></div>
+            <div class="product-body"><h3>Decoração Temática</h3><p>Diversos temas infantis e adultos para sua festa.</p><div class="product-bottom"><strong class="price">Sob consulta</strong><a class="text-link interest-link" data-item="Decoração Temática" href="#contato">Consultar ↗</a></div></div>
+        </article>
+
+        <!-- Produtos Bolos -->
+        <article class="product-card" data-category="bolos" data-subcategory="festa">
+            <div class="product-image"><img src="images/bolos/bolo-exemplo.jpg" alt="Bolo de Festa" loading="lazy"><span class="category-label">Bolos de Festa</span></div>
+            <div class="product-body"><h3>Bolo de Casamento/Aniversário</h3><p>Bolos decorados para grandes comemorações e formaturas.</p><div class="product-bottom"><strong class="price">Sob consulta</strong><a class="text-link interest-link" data-item="Bolo de Festa" href="#contato">Consultar ↗</a></div></div>
+        </article>
+        
+        <article class="product-card" data-category="bolos" data-subcategory="pote">
+            <div class="product-image"><img src="images/bolos/bolo-exemplo.jpg" alt="Bolo no Pote" loading="lazy"><span class="category-label">Bolos no Pote</span></div>
+            <div class="product-body"><h3>Bolo no Pote</h3><p>Ideal para o dia a dia, prático e muito saboroso.</p><div class="product-bottom"><strong class="price">Sob consulta</strong><a class="text-link interest-link" data-item="Bolo no Pote" href="#contato">Consultar ↗</a></div></div>
+        </article>
+
+        <article class="product-card" data-category="bolos" data-subcategory="fatias">
+            <div class="product-image"><img src="images/bolos/bolo-exemplo.jpg" alt="Fatia de bolo com docinhos" loading="lazy"><span class="category-label">Fatias (Combo)</span></div>
+            <div class="product-body"><h3>Combo Fatia Especial</h3><p>Fatia de bolo deliciosa acompanhada de 3 docinhos.</p><div class="product-bottom"><strong class="price">Sob consulta</strong><a class="text-link interest-link" data-item="Combo Fatia" href="#contato">Consultar ↗</a></div></div>
+        </article>
+
+        <!-- Produtos Doces -->
+        <article class="product-card" data-category="doces" data-subcategory="gourmet">
+            <div class="product-image"><img src="images/doces/doces-exemplo.jpg" alt="Doces Gourmet Tradicionais" loading="lazy"><span class="category-label">Doces Gourmet</span></div>
+            <div class="product-body"><h3>Docinhos Tradicionais</h3><p>Brigadeiro, beijinho, cajuzinho, moranguinho e o famoso "ele e ela".</p><div class="product-bottom"><strong class="price">Sob consulta</strong><a class="text-link interest-link" data-item="Doces Gourmet" href="#contato">Consultar ↗</a></div></div>
+        </article>
+
+        <article class="product-card" data-category="doces" data-subcategory="especiais">
+            <div class="product-image"><img src="images/cupcakes/cupcake-exemplo.jpg" alt="Doces Especiais e Cupcakes" loading="lazy"><span class="category-label">Doces Especiais</span></div>
+            <div class="product-body"><h3>Doces Finos & Cupcakes</h3><p>Morango beijado/trufado, cones trufados e cupcakes por encomenda.</p><div class="product-bottom"><strong class="price">Sob consulta</strong><a class="text-link interest-link" data-item="Doces Especiais e Cupcakes" href="#contato">Consultar ↗</a></div></div>
+        </article>
+
       </div>
-      <p class="fine-print">As imagens são ilustrativas. Entre em contato para ver todas as opções do nosso portfólio completo. Você pode substituir as imagens na pasta 'images'.</p>
+      <p class="fine-print">As imagens são ilustrativas. Entre em contato para ver todas as opções do nosso portfólio completo.</p>
     </section>
 
     <section class="how-section section" id="como-funciona"><div class="section-heading"><p class="eyebrow">É SIMPLES</p><h2>Como funciona?</h2><p>O processo de encomenda, resumido em três passos rápidos.</p></div>
